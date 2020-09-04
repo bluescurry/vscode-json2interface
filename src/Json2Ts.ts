@@ -6,7 +6,7 @@ export interface Command {
 }
 
 export class Json2Ts {
-    convert(content: string, command: Command): string {
+    convert(content: string, command: Command = {}): string {
         let jsonContent = JSON.parse(content);
 
         if (_.isArray(jsonContent)) {
