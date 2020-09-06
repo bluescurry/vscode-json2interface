@@ -126,9 +126,9 @@ export class Json2Ts {
             let key = allKeys[index];
             let commandStr = '';
             
-            console.log('key ---> ', key);
+            /* console.log('key ---> ', key);
             console.log('command && command[key] ---> ', command && command[key]);
-            console.log('command ---> ', command);
+            console.log('command ---> ', command); */
             if (command && command[key]) {
                 commandStr = `/** ${command[key]} */\r\t`;
             }
@@ -188,7 +188,7 @@ export function filterComment(content: string) {
 
     if (matchArr && matchArr?.length > 0) {
         matchArr.forEach(str => {
-            const res = str.match(/["']?(.*)["']?:.*(?<=\/\/ )(.*)/);
+            const res = str.match(/["']?(.*)["']?:\s.*(?<=\/\/\s?)(.*)/);
             if (res && res.length >= 3) {
                 commandObj[processField(res[1])] = res[2].trim();
             }
