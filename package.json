@@ -11,6 +11,7 @@
 		"color": "#007ACC",
 		"theme": "light"
 	},
+  "icon": "images/json2interface.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/bluescurry/vscode-json2interface.git"
