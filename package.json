@@ -2,7 +2,7 @@
 	"name": "json2interface",
 	"displayName": "json2interface",
 	"description": "通过 json 自动生成 typescript 的 interface 接口定义",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "BluesCurry",
 	"engines": {
 		"vscode": "^1.35.0"
