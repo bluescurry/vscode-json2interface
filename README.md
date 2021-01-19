@@ -1,6 +1,6 @@
 # json2interface README
 
-通过 JSON 直接生成 interface，支持复制 js 对象，并可以添加注释
+通过 JSON 直接生成 type，支持复制 js 对象，并可以添加注释
 
 <!-- ## Features
 

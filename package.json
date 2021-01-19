@@ -1,8 +1,8 @@
 {
 	"name": "json2interface",
 	"displayName": "json2interface",
-	"description": "通过 json 自动生成 typescript 的 interface 接口定义",
-	"version": "0.0.4",
+	"description": "通过 json 自动生成 typescript 的 type 类型定义",
+	"version": "0.0.5",
 	"publisher": "BluesCurry",
 	"engines": {
 		"vscode": "^1.35.0"
@@ -11,7 +11,7 @@
 		"color": "#007ACC",
 		"theme": "light"
 	},
-  "icon": "images/json2interface.png",
+	"icon": "images/json2interface.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/bluescurry/vscode-json2interface.git"

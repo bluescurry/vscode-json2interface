@@ -1,9 +1,9 @@
 import * as _ from "underscore";
 
 /** 注释对象集合 */
-export interface Command {
+export type Command = {
     [propName: string]: string
-}
+};
 
 export class Json2Ts {
     convert(content: string, command: Command = {}): string {
@@ -125,10 +125,7 @@ export class Json2Ts {
         for (let index = 0, length = allKeys.length; index < length; index++) {
             let key = allKeys[index];
             let commandStr = '';
-            
-            /* console.log('key ---> ', key);
-            console.log('command && command[key] ---> ', command && command[key]);
-            console.log('command ---> ', command); */
+
             if (command && command[key]) {
                 commandStr = `/** ${command[key]} */\r\t`;
             }
@@ -142,7 +139,7 @@ export class Json2Ts {
 
         objectName = this.removeMajority(objectName);
 
-        return "export interface " + objectName + " " + result;
+        return "export type " + objectName + " = " + result  + ";";
     }
 
     private removeMajority(objectName: string): string {
