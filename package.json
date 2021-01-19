@@ -3,7 +3,7 @@
 	"displayName": "json2interface",
 	"description": "通过 json 自动生成 typescript 的 type 类型定义",
 	"version": "0.0.5",
-	"publisher": "BluesCurry",
+	"publisher": "bluesCurry",
 	"engines": {
 		"vscode": "^1.35.0"
 	},
@@ -61,7 +61,6 @@
 		"glob": "^7.1.6",
 		"mocha": "^8.0.1",
 		"typescript": "^3.8.3",
-		"vsce": "^1.79.5",
 		"vscode-test": "^1.4.0"
 	},
 	"dependencies": {
