@@ -4,3 +4,4 @@ src/test/source
 *.zip
 *.vsix
 .vscode-test
+.Ds_store
